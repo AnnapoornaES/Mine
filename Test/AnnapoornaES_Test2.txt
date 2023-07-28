@@ -1,0 +1,210 @@
+1.  Method Overloading means  a class, having multiple methods, with different parameters.
+//using static method
+
+class Animal{
+
+ System.out.println(" Animalssssss");
+static void Dog(){
+System.out.println("Dog is running");
+
+}
+static void Cat(String name){
+
+System.out.println("Cat name is:"+name);
+}
+
+}
+class AnimalMain{
+public static void main(String [] args){
+System.out.println("Running main");
+Animal.Dog();
+Animal.Cat("Laddu");
+}
+
+}
+
+
+
+
+
+2.  Variables are of 4 types, 
+Local variables,Instance variables,Static variables and parameters.
+
+Local variables are variables declared inside the method.
+Instance variables are variables declared inside the class and outside the method.
+Static variables are variables with static keyword and having only one copy .
+parameter are written inside the paranthesis of method.
+
+
+class A{
+static name="Jimmy";  //It is static variable
+int num;     //It is an instance variable
+
+public static void main(String [] args){
+ A.Dog();
+A.Cat("Ruby");
+ void Dog(){
+int age=3; //it is a local variable
+System.out.println("Dog age is "+age);
+
+}
+
+void Cat(String name){
+
+System.out.println("Cat name is:"+name);
+}
+//here String name is a parameter
+
+
+}
+
+}
+
+
+
+
+3.    Heap memory is a primary memory, which has meta space,constant pool, instance memory and stack. 
+Stack memory is the memory where the methods are being executed.If the classes have the method then only stack will creat and forms the  frames.
+
+
+
+4.  constructor overloading.....
+
+
+class Meat{
+
+String name;
+int quantity;
+
+Meat(){
+
+System.out.println("TAsty to eat....");
+
+}
+
+Meat(String name){
+
+System.out.println("Constructor with one parameter:"+name);
+
+}
+}
+
+
+class MeatMain{
+    public static void main(String [] args){
+
+    
+System.out.println(" Running main....");
+Meat obj=new Meat();
+Meat obj1=new Meat("Crab");
+
+
+}
+
+}
+
+
+
+
+
+6.   //static var and static meth
+
+class Meat{
+
+ 
+static int quantity=23;
+
+
+static void Chicken(){
+     System.out.println(" Chicken quantity is"+quantity);
+        
+
+}
+static void Mutton(){
+String name="Munna";
+        System.out.println(" Name is"+name);
+}
+
+
+}
+
+
+class MeatMain{
+public static void main(String [] args){
+
+System.out.println(" Running main....");
+
+Meat.Chicken();
+Meat.Mutton();
+
+}}
+
+
+7.    class Icecream{
+
+String flavour;
+int quantity;
+
+System.out.println("IceCream runninggg");
+
+Icecream(){
+this("Choco",23);
+System.out.println("Super icecream....");
+
+}
+
+Icecream(String flavour){
+System.out.println("Calling icecream....");
+}
+
+
+
+Icecream(String flavour,int quantity){
+this("Black current");
+System.out.println("Calling  two icecream....");
+}
+
+
+}
+
+
+class IcecreamMain{
+
+public static void main(String [] args){
+
+System.out.println("Running main icecream....");
+Icecream obj=new Icecream();
+
+
+}
+
+}
+
+
+
+
+
+5.    
+
+
+
+class Animal{
+public static void main(String [] args){
+
+ System.out.println(" Animalssssss");
+
+Dog();
+Dog("Laddu");
+
+ void Dog(){
+System.out.println("Dog is running");
+
+}
+ void Dog(String name){
+
+System.out.println("Dog name is:"+name);
+}
+
+}
+}
+
