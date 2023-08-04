@@ -8,8 +8,10 @@ public class TaxonomySleeper {
 		TaxonomicSystem taxo=new TaxonomicSystem();
 		taxo.taxo();
 		
-		TaxonomicSystem taxo2=new Species();
-		taxo2.spy();
+		TaxonomicSystem taxo2=new Domain();
+		taxo.domain();
+		
+		
 		
 
 	}
