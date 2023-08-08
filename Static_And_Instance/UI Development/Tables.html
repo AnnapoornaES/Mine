@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title>HTML Tables</title>
+        <style>
+            table ,td,th{
+            border: 3px solid rgb(42, 157, 165);
+            border-collapse: collapse;
+            text-align: center;
+            padding: 3px;
+        }
+
+        #Custom-table thead{
+            background-color: black;color:aqua;
+        }
+
+
+        </style>
+
+       
+
+
+    </head>
+    <body>
+        <h2>Simple Table</h2>
+        <table width="100%">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Rank</th>
+                </tr>
+            </thead>
+            <tbody >
+                <tr>
+                    <td>Mysore Park</td>
+                    <td>2 Kg</td>
+                    <td>Second</td>
+                </tr>
+                <tr>
+                    <td>Mothichoor Laddu</td>
+                    <td>8 Kg</td>
+                    <td>First</td>
+                </tr>
+                <tr>
+                    <td>Burfi</td>
+                    <td>1Kg</td>
+                    <td>Third</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <h2>Table with Col Span</h2>
+        <table width="50%">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th colspan="2">Quantity & Rank</th>
+                    
+                </tr>
+            </thead>
+            <tbody >
+                <tr>
+                    <td>Mysore Park</td>
+                    <td>2 Kg</td>
+                    <td>Second</td>
+                </tr>
+                <tr>
+                    <td>Mothichoor Laddu</td>
+                    <td>8 Kg</td>
+                    <td>First</td>
+                </tr>
+                <tr>
+                    <td>Burfi</td>
+                    <td>1Kg</td>
+                    <td>Third</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <h2> Table with Row Span</h2>
+        <table width="100%">
+            <thead>
+                <tr>
+                    <th>SI No</th>
+                    <th>Name</th>
+                    <th>Rank</th>
+                </tr>
+            </thead>
+            <tbody >
+                <tr>
+                    <td rowspan="2">1</td>
+                    <td>Mysore Park</td>
+                    <td>Second</td>
+                </tr>
+                <tr>
+                
+                    <td>Mothichoor Laddu</td>
+                    <td>First</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Burfi</td>
+                    <td>Third</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <h2>Custom Table</h2>
+        <table width="85%" id="Custom-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Rank</th>
+                </tr>
+            </thead>
+            <tbody >
+                <tr>
+                    <td>Mysore Park</td>
+                    <td>2 Kg</td>
+                    <td>Second</td>
+                </tr>
+                <tr>
+                    <td>Mothichoor Laddu</td>
+                    <td>8 Kg</td>
+                    <td>First</td>
+                </tr>
+                <tr>
+                    <td>Burfi</td>
+                    <td>1Kg</td>
+                    <td>Third</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </body>
+</html>
